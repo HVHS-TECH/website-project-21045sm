@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Glorb Game</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="12COMP P5.play">
+  <meta name="keywords" content="12COMP, P5.play">
+  <meta name="author" content="???">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://codehs.com/uploads/6d69e7fd82a2999b402dafe6f46c0279">
+  
+  <!-- stylesheets *********************************-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="style.css">
+ 
+  <!-- P5.js & P5.play *****************************-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js" integrity="sha512-bzpp8klYroR6PFgL3RJ+VkvY5hJna7Zd38OA56peUDHSNQpSiN9lDQVnMYtcw7hoAVhbR6mAOdH+ymzg1o+G0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.js" integrity="sha512-TU9AWtV5uUZPX8dbBAH8NQF1tSdigPRRT82vllAQ1Ke28puiqLA6ZVKxtUGlgrH6yWFnkKy+sE6luNEGH9ar0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://p5play.org/v3/planck.min.js"></script>
+  <script src="https://p5play.org/v3/p5play.js"></script>
+
+
+  <!-- Firebase App (core Firebase SDK) is always required & must be listed 1st -->
+ <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>  
+  <!-- Add Firebase products that you want to use -->
+ <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>  
+ <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script> 
+ <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script> 
+
+ <script src="fb_login.js"></script>
+  
+</head>
+
+<!--***************************************************
+  BODY
+****************************************************-->
+<body>
+
+  <!--<script src="setup/setup.js"></script>-->
+  <script src="fb/fbP_manager.js"></script>
+  <script src="fb/fb_io.js"></script>
+  <!--<script src="pf_game_js_scripts/level1Test.js"></script>-->
+
+  <!--activates fb_setup, starting the code-->
+  <!--<button onclick="fb_setup()">do stuff</button> <br> -->
+  <!--does what it says on the tin, reads high scores-->
+  <!--<button onclick="fb_readHighScores()">read high scores</button> <br> -->
+  <!--activates fb_login, so you can log in (obviously)-->
+  <h3>Already have an account? click here!</h3>
+  <button onclick="fb_login()">log in</button> <br>
+  
+  <!--<button onclick="platformGameSetup(), level1()">start</button> <br> -->
+
+  <!--<button onclick="setup(), fb_readHighScores()">setup</button> <br> -->
+  <h3>Not registered? click here!</h3>
+  <button onclick="windowLocationRegistrationTest(), fbP_initialize()">register</button>
+
+
+  <h3>Singleplayer game</h3>
+  <button onclick="platformGameSetup()">play</button>
+</body>
+</html>
+
