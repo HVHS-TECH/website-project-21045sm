@@ -12,11 +12,12 @@ function loginPage() {
 }
 
 /*************************************/
-//
-//
-//
-//
-//
+//fb_login
+//logs in the user with google authentication
+//called by login.html/fb_setup
+//Input: login button clicked
+//Output: user is logged into the website with their account 
+//and their info is saved to firebase
 /*************************************/
 function fb_login() {
   const auth = firebase.auth();
@@ -28,10 +29,7 @@ function fb_login() {
       console.log(user);
       const uid = user.uid;
       console.log(uid);
-      //fb_register()
-      //fb_saveRegistrationInfo()
       firebase.database().ref('users/'+user.uid).set({
-        //gameName: HTML_screen_name.value,
         googleName: user.displayName,
         photo: user.photoURL,
         email: user.email
@@ -51,8 +49,6 @@ function fb_login() {
           console.log(user);
           //take the user to the game
           windowLocationGame2PMenu()
-          //fb_register()
-          //fb_saveRegistrationInfo()
         })
         .catch((error) => {
           console.error("Error during sign-in:", error);
