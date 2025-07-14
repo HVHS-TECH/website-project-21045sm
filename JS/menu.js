@@ -17,9 +17,9 @@
 function menuPage() {
   console.log("menu page")
   window.location = "HTML/menu.html";
-  
+
 }
 
-
+// REMINDER, LOOK AT CODEHS PREVIOUS WORK
 
 /*************************************/
