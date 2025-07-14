@@ -7,10 +7,6 @@
 // 
 /***************************************************************/
 
-function menuPage() {
-    window.location = "HTML/menu.html";
-}
-
 /*************************************/
 //menuPage
 //takes the user to the menu page and runs the menu
@@ -19,8 +15,11 @@ function menuPage() {
 //Output: user is on the menu page with all the games
 /*************************************/
 function menuPage() {
-//  const auth = firebase.auth();
-  console.log("menu page");
+  console.log("menu page")
   window.location = "HTML/menu.html";
   
 }
+
+
+
+/*************************************/
