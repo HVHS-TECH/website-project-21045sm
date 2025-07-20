@@ -7,8 +7,8 @@
 // 
 /***************************************************************/
 
-function loginPage() {
-    window.location = "login.html"
+function landingPage() {
+    window.location = "landingPage.html"
 }
 
 /*************************************/
