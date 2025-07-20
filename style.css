@@ -1,0 +1,46 @@
+#1 {
+    background-color: red;
+}
+
+#2 {
+    background-color: blue;
+}
+
+#3 {
+    background-color: green;
+}
+
+#4 {
+    background-color: yellow;
+}
+
+#5 {
+    background-color: purple;
+}
+
+#6 {
+    background-color: orange;
+}
+
+#7 {
+    background-color: indigo;
+}
+
+#8 {
+    background-color: cyan;
+}
+
+#9 {
+    background-color: brown;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.top-left {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: pink;
+}
