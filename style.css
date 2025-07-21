@@ -1,4 +1,10 @@
+#spinSpiral1 {
+    animation: spin1 5s infinite;
+}
 
+@keyframes spin1 {
+    50% {transform: rotate(360deg);}
+}
 
 .container {
     display: grid;
