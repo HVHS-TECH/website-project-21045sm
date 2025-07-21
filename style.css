@@ -6,6 +6,38 @@
     50% {transform: rotate(360deg);}
 }
 
+#spinSpiral2 {
+    animation: spin2 5s infinite;
+}
+
+@keyframes spin2 {
+    50% {transform: rotate(360deg);}
+}
+
+#spinSpiral3 {
+    animation: spin3 5s infinite;
+}
+
+@keyframes spin3 {
+    50% {transform: rotate(360deg);}
+}
+
+#spinSpiral4 {
+    animation: spin4 5s infinite;
+}
+
+@keyframes spin4 {
+    50% {transform: rotate(360deg);}
+}
+
+#spinSpiralBig {
+    animation: spinBig 5s infinite;
+}
+
+@keyframes spinBig {
+    50% {transform: rotate(360deg);}
+}
+
 .container {
     display: grid;
     height: 100vh;
