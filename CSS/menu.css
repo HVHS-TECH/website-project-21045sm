@@ -27,6 +27,13 @@
     position: absolute;
 }
 
+.game1Button {
+    width: 210.08px;
+    height: 300px;
+    object-fit: cover;
+    position:absolute;
+}
+
 .grid-1-1 {
     grid-column: 1;
     grid-row: 1;
