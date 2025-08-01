@@ -34,7 +34,7 @@
     position:absolute;
 }
 
-@media mouse and (hover: hover){
+@media cursor and (hover: hover){
     .game1Button {
         width: 30.45vh;
         height: 42vh;
