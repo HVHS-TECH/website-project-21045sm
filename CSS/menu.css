@@ -28,8 +28,8 @@
 }
 
 .game1Button {
-    width: 210.08px;
-    height: 300px;
+    width: 29vh;
+    height: 40vh;
     object-fit: cover;
     position:absolute;
 }
