@@ -6,6 +6,7 @@
     background-color: #b14d4d;
 }
 
+/*sets the container of the grid*/
 .container {
     display: grid;
     height: 100vh;
@@ -14,10 +15,12 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.3fr;
 }
 
+/*this code applies to all divs inside the container*/
 .container > div {
     min-height: 20px; 
 }
 
+/*this code sets the background*/
 .background{
     grid-column: 1 / span 7;
     grid-row: 1 / span 5;
@@ -27,25 +30,25 @@
     position: absolute;
 }
 
+/*this code sets the games button as it is*/
 .game1Button {
     width: 29vh;
     height: 40vh;
     object-fit: cover;
     position:absolute;
+    z-index: +1;
+    transition: transform 0.2s, filter 0.2s;
 }
 
+/*this code changes the buttons size/brightness slightly when hovered over*/
 @media (hover: hover){
     .game1Button:hover {
-        width: 30.45vh;
-        height: 42vh;
-        background-color: #e0e0e0;
-        transition: background-color 0.2s, width 0.2s, height 0.2s;
-    }
-    .game1Button {
-        transition: background-color 0.2s, width 0.2s, height 0.2s;
+        transform: scale(1.05);
+        filter: brightness(1.1);
     }
 }
 
+/*a large series of grids*/
 .grid-1-1 {
     grid-column: 1;
     grid-row: 1;
