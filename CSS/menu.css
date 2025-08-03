@@ -34,10 +34,15 @@
     position:absolute;
 }
 
-@media cursor and (hover: hover){
-    .game1Button {
+@media (hover: hover){
+    .game1Button:hover {
         width: 30.45vh;
         height: 42vh;
+        background-color: #e0e0e0;
+        transition: background-color 0.2s, width 0.2s, height 0.2s;
+    }
+    .game1Button {
+        transition: background-color 0.2s, width 0.2s, height 0.2s;
     }
 }
 
