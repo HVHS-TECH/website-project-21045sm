@@ -57,6 +57,24 @@ body {
     }
 }
 
+/*this code sets the games button as it is*/
+.game2Button {
+    width: 29vh;
+    height: 40vh;
+    object-fit: cover;
+    position:absolute;
+    z-index: +1;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+/*this code changes the buttons size/brightness slightly when hovered over*/
+@media (hover: hover){
+    .game2Button:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+}
+
 /*a large series of grids*/
 .grid-1-1 {
     grid-column: 1;
