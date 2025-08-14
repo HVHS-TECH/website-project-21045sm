@@ -13,10 +13,11 @@
     min-height: 20px; 
 }
 
-.background {
+.mahmoud {
     position: absolute;
-    width: 30%;
-    height: 30%;
+    width: 45%;
+    height: 45%;
+    align: center;
 }
 
 #backgroundColour1 {
@@ -35,7 +36,7 @@ body {
 /*a large series of grids*/
 
 .headerLeft {
-    grid-column: 1;
+    grid-column: 1 / span 3;
     grid-row: 1;
 }
 
@@ -43,15 +44,6 @@ h2 {
     color: white;
 }
 
-.headerMidLeft {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.leftOfHeader {
-    grid-column: 3;
-    grid-row: 1;
-}
 
 .header {
     grid-column: 4;
