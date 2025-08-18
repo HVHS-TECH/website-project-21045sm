@@ -13,11 +13,24 @@
     min-height: 20px; 
 }
 
+/*size/position of an image in the grid*/
 .mahmoud {
     position: absolute;
     width: 45%;
-    height: 45%;
-    align: center;
+    height: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/*size/position of an image in the grid*/
+.screamFace {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #backgroundColour1 {
@@ -38,7 +51,7 @@ body {
 .headerLeft {
     grid-column: 1 / span 3;
     grid-row: 1;
-}
+}  
 
 h2 {
     color: white;
