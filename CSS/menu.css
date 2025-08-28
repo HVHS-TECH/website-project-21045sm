@@ -21,12 +21,12 @@ body {
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     /*adjusted width to account for footer*/
-    grid-template-rows: 0.189fr 0.189fr 0.189fr 0.189fr 0.189fr 0.055fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.291005291fr;
 }
 
 /*this code applies to all divs inside the container*/
-.container > div {
-    min-height: 20px; 
+.container > div { 
+    min-height: 95px;
 }
 
 /*this code sets the background*/
@@ -70,6 +70,42 @@ body {
 /*this code changes the buttons size/brightness slightly when hovered over*/
 @media (hover: hover){
     .game2Button:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+}
+
+/*this code sets the games button as it is*/
+.game3Button {
+    width: 29vh;
+    height: 40vh;
+    object-fit: cover;
+    position:absolute;
+    z-index: +1;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+/*this code changes the buttons size/brightness slightly when hovered over*/
+@media (hover: hover){
+    .game3Button:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+}
+
+/*this code sets the games button as it is*/
+.game4Button {
+    width: 29vh;
+    height: 40vh;
+    object-fit: cover;
+    position:absolute;
+    z-index: +1;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+/*this code changes the buttons size/brightness slightly when hovered over*/
+@media (hover: hover){
+    .game4Button:hover {
         transform: scale(1.05);
         filter: brightness(1.1);
     }
