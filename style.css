@@ -60,6 +60,8 @@
     min-height: 60px; 
 }
 
+/*remember to rename everything to meet the naming standards of my project*/
+
 .top-left {
     grid-column: 1;
     grid-row: 1;
