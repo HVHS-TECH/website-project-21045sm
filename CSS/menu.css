@@ -111,6 +111,62 @@ body {
     }
 }
 
+@media (max-width: 400px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, minmax(300px, 1fr)) 0.5fr;
+        height: auto;
+        width: 100vw;
+        position: relative;
+    }
+
+    /* Move game button grid cells to stack vertically */
+    .grid-1-2 { grid-column: 1 !important; grid-row: 1 !important; }
+    .grid-1-6 { grid-column: 1 !important; grid-row: 2 !important; }
+    .grid-4-2 { grid-column: 1 !important; grid-row: 3 !important; }
+    .grid-4-6 { grid-column: 1 !important; grid-row: 4 !important; }
+
+    /* Style buttons for mobile */
+    .game1Button,
+    .game2Button,
+    .game3Button,
+    .game4Button {
+        position: relative; /* Use relative instead of static/absolute */
+        width: 70vw;
+        height: 12vh;
+        max-width: 300px;
+        max-height: 80px;
+        margin: 10px 0;
+        display: block;
+        z-index: 2; /* Make sure buttons are above the background */
+    }
+
+    /* Hide all other grid cells except the four button rows and footer */
+    .container > div:not(.grid-1-2):not(.grid-1-6):not(.grid-4-2):not(.grid-4-6):not(.footer) {
+        display: none !important;
+    }
+
+    .footer {
+        grid-column: 1;
+        grid-row: 5;
+        background-color: purple;
+        text-align: center;
+        z-index: 3;
+    }
+
+    .background {
+        grid-column: 1;
+        grid-row: 1 / span 5;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1; /* Lower than buttons */
+    }
+}
+
 /*a large series of grids*/
 .grid-1-1 {
     grid-column: 1;
